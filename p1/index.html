@@ -1,11 +1,37 @@
+<!-- tempratue converter c-f and f-c  -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TEMP COVERTER</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <h1>Hello guyss</h1>
+
+    <!-- only to select on checkbox add name attribute value same -->
+    <div class="container">
+        <h1>Temperature Converter</h1>
+
+        <input type="number" id="textbox" value="0" class="input-box"><br>
+
+        <div class="radio-group">
+            <input type="radio" id="toF" name="unit"> 
+            <label for="toF">Celsius to Fahrenheit</label><br>
+
+            <input type="radio" id="toC" name="unit"> 
+            <label for="toC">Fahrenheit to Celsius</label><br>
+        </div>
+
+        <button type="button" onclick="convert()">Convert</button>
+        <p id="result"></p>
+    </div>
+
+
+    <script src="index.js"></script>
+
+
 </body>
 </html>
